@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Full Stack ExpenseTracker</title>
+</head>
+<style>
+    body {
+        background-color: rgb(189, 219, 225);
+    }
+</style>
+<body>
+    <form id="form">
+        <label for="expenceid">Expence-Amount :</label>
+        <input type="number" name="expence" id="expenceid">
+
+        <label for="descriptionid">Description :</label>
+        <input type="text" name="Description" id="descriptionid">
+
+        <label for="categories">Categories :</label>
+        <select id="categories" name="Categories">
+            <option value="fuel">Fuel</option>
+            <option value="Movie">Movie</option>
+            <option value="electricity">Electricity</option>
+            <option value="food">Food</option>
+          </select>
+          <button id="add">Add Items</button>        
+    </form>
+    <ul id="screen"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
